@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
+import AppIndex from '@/components/home/AppIndex'
+import Login from '@/components/Login'
+import Home from '../components/Home'
 
 Vue.use(Router)
 
@@ -12,9 +15,26 @@ export default new Router({
       component: HelloWorld
     },
     {
+      path: '/home',
+      name: 'Home',
+      component: Home,
+      // home页面并不需要被访问
+      redirect: '/index',
+      children: [
+        {
+          path: '/index',
+          name: 'AppIndex',
+          component: AppIndex,
+          meta: {
+            requireAuth: true
+          }
+        }
+      ]
+    },
+    {
       path: '/login',
-      component: () => import('@/web/routes/passport/index'),
-      hidden: true
+      name: 'Login',
+      component: Login
     }
   ]
 })
