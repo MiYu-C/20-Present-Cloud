@@ -10,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '/login',
+      component: () => import('@/web/routes/passport/index'),
+      hidden: true
     }
   ]
 })
