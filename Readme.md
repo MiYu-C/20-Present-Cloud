@@ -7,6 +7,5 @@
 | 仓库名  | 链接 |
 |----|----|
 | 安卓前端  | [链接](https://github.com/MiYu-C/20-PresentCloud-Android) |
-| 安卓后端  | [链接](https://github.com/MiYu-C/20-PresentCloud-Android-admin) |
 | web前端  | [链接](https://github.com/MiYu-C/20-PresentCloud-web) |
-| web后台  | [链接](https://github.com/MiYu-C/20-PresentCloud-web-admin) |
+| 后端  | [链接](https://github.com/ZyuHookie/present_cloud/) |
